@@ -1,13 +1,13 @@
 # =============================================================================
-# title: 			pca.py
-# author: 			Nura Kawa
-# summary:			Principal component analysis as a sklearn estimator
-#					Uses singular value decomposition from numpy.linalg
-#					tested with the iris dataset from sklearn
+# title: 		pca.py
+# author: 		Nura Kawa
+# summary:		Principal component analysis as a sklearn estimator
+#			Uses singular value decomposition from numpy.linalg
+#			tested with the iris dataset from sklearn
 # =============================================================================
 
 # Import Libraries
-# -----------------------------------------------------------------------------
+
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn import datasets
 import numpy as np
@@ -15,8 +15,6 @@ import math
 import numpy.linalg as la
 import matplotlib.pyplot as plt
 
-# PCA
-# -----------------------------------------------------------------------------
 """
 class PCA
 
@@ -114,7 +112,6 @@ class PCA(BaseEstimator, TransformerMixin):
 		return
 
 # Use with Iris Dataset
-# -----------------------------------------------------------------------------
 
 iris = datasets.load_iris()
 X = iris.data
